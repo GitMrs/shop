@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #ccc; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  background: #F6F5F5; }
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.main {
+  flex: 1;
+  overflow-y: auto; }
+
+#home {
+  display: flex;
+  flex-direction: column; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  width: 100%;
+  display: flex;
+  background: #fff;
+  height: 65px;
+  flex: none; }
+  header i {
+    display: inline-block;
+    width: 6rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem; }
+    header i img {
+      width: 83%;
+      height: 83%; }
+  header .search {
+    flex: 1;
+    position: relative;
+    margin-top: 1rem; }
+    header .search input {
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.5rem;
+      background: #F5F5F5;
+      outline: none;
+      border: none;
+      padding-left: 3.5rem; }
+    header .search b {
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      top: .8rem;
+      left: 1.5rem; }
+      header .search b img {
+        width: 100%;
+        height: 100%; }
+  header .r {
+    width: 97px;
+    margin-top: 1rem; }
+    header .r ul {
+      width: 100%;
+      display: flex; }
+      header .r ul li {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        header .r ul li img {
+          width: 60%;
+          height: 60%; }
+        header .r ul li a {
+          font-weight: bolder;
+          color: #FD6868; }
+
+.swiper-container {
+  background: #fff;
+  width: 100%; }
+  .swiper-container ul {
+    width: 100%; }
+    .swiper-container ul li {
+      width: 100%; }
+      .swiper-container ul li img {
+        width: 100%; }
+
+nav {
+  width: 100%;
+  background: #fff;
+  margin-top: .5rem; }
+  nav ul {
+    width: 100%;
+    display: flex;
+    padding: 1rem; }
+    nav ul li {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      nav ul li img {
+        width: 69%; }
+
+.tip {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1rem 1rem 0;
+  background: #fff;
+  height: 133px;
+  overflow: hidden; }
+  .tip .tip-l {
+    width: 75px;
+    font-size: 28px;
+    color: #FF6D00;
+    margin-left: 1.5rem; }
+  .tip .swiper {
+    width: 90%;
+    overflow: hidden; }
+  .tip .tip-r {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: .6rem;
+    word-break: break-word;
+    overflow: hidden;
+    padding: .5rem;
+    line-height: 2rem;
+    font-size: 2rem; }
+
+.title {
+  width: 100%;
+  background: #fff;
+  margin-top: .5rem;
+  padding: 1rem;
+  color: #FF6D00;
+  height: 5rem;
+  position: relative; }
+  .title i {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 10px;
+    left: 16px; }
+    .title i img {
+      width: 100%;
+      height: 100%; }
+  .title b {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 68px;
+    top: 12px; }
+  .title span {
+    display: inline-block;
+    position: absolute;
+    left: 176px;
+    top: 20px; }
+  .title a {
+    position: absolute;
+    top: 19px;
+    right: 13px; }
+
+.Preferential {
+  width: 100%;
+  display: flex;
+  padding-left: .1rem; }
+  .Preferential img {
+    width: 100%;
+    height: 100%; }
+  .Preferential .Preferential-l {
+    flex: 1;
+    padding: .5rem .25rem .5rem .5rem; }
+  .Preferential .Preferential-r {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .Preferential .Preferential-r p {
+      flex: 1;
+      padding: .5rem; }
+
+.classify {
+  width: 100%;
+  height: 4.5rem;
+  background: #fff;
+  position: relative; }
+  .classify img {
+    position: absolute;
+    top: 27px; }
+  .classify a {
+    position: absolute;
+    top: 20px;
+    right: 2rem;
+    color: #000; }
+  .classify span {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: -10px;
+    left: 32%; }
+    .classify span img {
+      width: 100%;
+      height: 100%; }
+  .classify label {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 13px;
+    left: 40%;
+    color: #FF6D00; }
+  .classify img:nth-of-type(1) {
+    left: 20%; }
+  .classify img:nth-of-type(2) {
+    right: 20%; }
+
+footer {
+  width: 100%;
+  background: #fff;
+  height: 6rem; }
+  footer ul {
+    width: 100%;
+    display: flex;
+    margin-top: 10px; }
+    footer ul a {
+      flex: 1;
+      font-size: 1.8rem;
+      color: #333333; }
+      footer ul a li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        footer ul a li span {
+          display: inline-block;
+          width: 3rem;
+          height: 3rem;
+          margin-top: 12px; }
+          footer ul a li span img {
+            width: 100%;
+            height: 100%; }
+        footer ul a li .num {
+          position: absolute;
+          top: -10px;
+          left: 55%;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 2rem;
+          background: red;
+          color: #fff;
+          text-align: center;
+          line-height: 2rem; }
+    footer ul .router-link-active a {
+      color: red; }
+
+/*# sourceMappingURL=style.css.map */
